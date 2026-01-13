@@ -1,15 +1,23 @@
+/* Reset & Global */
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     background: #0f172a;
     color: #e5e7eb;
+    scroll-behavior: smooth;
 }
 
+/* LAYOUT */
 .layout {
     display: flex;
+    flex-wrap: wrap;
 }
 
-
+/* SIDEBAR */
 .sidebar {
     width: 220px;
     height: 100vh;
@@ -35,13 +43,14 @@ body {
     color: #38bdf8;
 }
 
-
+/* MAIN CONTENT */
 .main-content {
     margin-left: 220px;
     padding: 50px;
     width: 100%;
 }
 
+/* SECTIONS */
 section {
     margin-bottom: 100px;
 }
@@ -50,17 +59,17 @@ section {
     margin-bottom: 30px;
 }
 
-
 .hero span {
     color: #38bdf8;
 }
 
-
+/* BUTTONS */
 .btn {
     padding: 10px 22px;
     border-radius: 20px;
     text-decoration: none;
     margin-right: 10px;
+    cursor: pointer;
 }
 
 .primary {
@@ -73,7 +82,7 @@ section {
     color: #38bdf8;
 }
 
-
+/* GRIDS */
 .about-grid,
 .project-grid {
     display: grid;
@@ -86,9 +95,14 @@ section {
     background: #1e293b;
     padding: 20px;
     border-radius: 15px;
+    transition: 0.3s;
 }
 
+.project-card:hover {
+    transform: translateY(-5px);
+}
 
+/* SKILLS BARS */
 .bar {
     background: #1e293b;
     height: 10px;
@@ -106,7 +120,7 @@ section {
 .js { width: 75%; }
 .ui { width: 80%; }
 
-
+/* CONTACT FORM */
 .contact-card {
     max-width: 400px;
     background: #1e293b;
@@ -121,9 +135,15 @@ section {
     padding: 10px;
     border-radius: 10px;
     border: none;
+    background: #0f172a;
+    color: #e5e7eb;
 }
 
+.contact-card textarea {
+    resize: none;
+}
 
+/* PROFILE IMAGE */
 .profile-img {
     width: 120px;
     height: 120px;
@@ -134,12 +154,35 @@ section {
     border: 3px solid #38bdf8;
 }
 
-
+/* PROJECT IMAGE */
 .project-card img {
     width: 100%;
     height: 160px;
     object-fit: cover;
     border-radius: 12px;
     margin-bottom: 10px;
-    
+}
+
+/* CONTACT DETAILS */
+.contact-details {
+    margin-top: 30px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .layout {
+        flex-direction: column;
+    }
 }
