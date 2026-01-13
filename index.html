@@ -3,175 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Angel | Portfolio</title>
+
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">Portfolio</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">Hi, I'm <span class="highlight">Your Name</span></h1>
-                <p class="hero-subtitle">Web Developer | Designer | Creative Thinker</p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-                </div>
-            </div>
-        </div>
-    </section>
+<div class="layout">
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <img src="images/profile.jpg" alt="Profile" class="profile-img">
+        <h2 class="logo">Angel P. Sortones</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+        <!-- HERO -->
+        <section id="home" class="hero">
+            <h1>Hello, I'm <span>Angel</span></h1>
+            <p>Frontend Web Developer & UI/UX Designer</p>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about">
             <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>I'm a passionate web developer with experience in creating beautiful and functional websites. I love turning ideas into reality through code.</p>
-                    <p>With a keen eye for design and a commitment to clean code, I strive to create user experiences that are both visually appealing and highly functional.</p>
+            <p>I create modern and simple websites with clean UI.</p>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects">
+            <h2 class="section-title">Projects</h2>
+
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="images/project1.jpg" alt="Project 1">
+                    <h3>Portfolio Website</h3>
+                    <p>HTML, CSS, JavaScript</p>
+                </div>
+
+                <div class="project-card">
+                    <img src="images/project2.jpg" alt="Project 2">
+                    <h3>Booking System</h3>
+                    <p>PHP & MySQL</p>
+                </div>
+
+                <div class="project-card">
+                    <img src="images/project3.jpg" alt="Project 3">
+                    <h3>Admin Dashboard</h3>
+                    <p>Bootstrap 5</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">My Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="placeholder-image">Project 1</div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Project Title 1</h3>
-                        <p>A brief description of your project and the technologies used.</p>
-                        <div class="project-links">
-                            <a href="#" class="project-link">View Demo</a>
-                            <a href="#" class="project-link">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="placeholder-image">Project 2</div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Project Title 2</h3>
-                        <p>A brief description of your project and the technologies used.</p>
-                        <div class="project-links">
-                            <a href="#" class="project-link">View Demo</a>
-                            <a href="#" class="project-link">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="placeholder-image">Project 3</div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Project Title 3</h3>
-                        <p>A brief description of your project and the technologies used.</p>
-                        <div class="project-links">
-                            <a href="#" class="project-link">View Demo</a>
-                            <a href="#" class="project-link">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
+        <!-- SKILLS -->
+        <section id="skills">
             <h2 class="section-title">Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-item">
-                    <h3>Frontend</h3>
-                    <ul>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>JavaScript</li>
-                        <li>React</li>
-                    </ul>
-                </div>
-                <div class="skill-item">
-                    <h3>Backend</h3>
-                    <ul>
-                        <li>Node.js</li>
-                        <li>Python</li>
-                        <li>SQL</li>
-                        <li>APIs</li>
-                    </ul>
-                </div>
-                <div class="skill-item">
-                    <h3>Tools</h3>
-                    <ul>
-                        <li>Git</li>
-                        <li>VS Code</li>
-                        <li>Figma</li>
-                        <li>Photoshop</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <form class="contact-form" id="contactForm">
-                    <div class="form-group">
-                        <input type="text" id="name" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </section>
+            <p>HTML / CSS</p>
+            <div class="bar"><div class="fill html"></div></div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Your Name. All rights reserved.</p>
-            <div class="social-links">
-                <a href="#">LinkedIn</a>
-                <a href="#">GitHub</a>
-                <a href="#">Twitter</a>
-            </div>
-        </div>
-    </footer>
+            <p>JavaScript</p>
+            <div class="bar"><div class="fill js"></div></div>
 
-    <script src="js/script.js"></script>
+            <p>UI / UX</p>
+            <div class="bar"><div class="fill ui"></div></div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact">
+            <h2 class="section-title">Contact</h2>
+            <form class="contact-card">
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <textarea placeholder="Message"></textarea>
+                <button class="btn primary">Send</button>
+            </form>
+        </section>
+
+    </main>
+</div>
+
 </body>
 </html>
